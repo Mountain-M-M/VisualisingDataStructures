@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		856C518E29C0C63A007FA23B /* VisualisingDataStructuresApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C518D29C0C63A007FA23B /* VisualisingDataStructuresApp.swift */; };
-		856C519029C0C63A007FA23B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C518F29C0C63A007FA23B /* ContentView.swift */; };
+		856C519029C0C63A007FA23B /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C518F29C0C63A007FA23B /* StackView.swift */; };
 		856C519229C0C63D007FA23B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 856C519129C0C63D007FA23B /* Assets.xcassets */; };
 		856C519529C0C63D007FA23B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 856C519429C0C63D007FA23B /* Preview Assets.xcassets */; };
 		856C519F29C0C63D007FA23B /* VisualisingDataStructuresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C519E29C0C63D007FA23B /* VisualisingDataStructuresTests.swift */; };
 		856C51A929C0C63D007FA23B /* VisualisingDataStructuresUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C51A829C0C63D007FA23B /* VisualisingDataStructuresUITests.swift */; };
 		856C51AB29C0C63D007FA23B /* VisualisingDataStructuresUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C51AA29C0C63D007FA23B /* VisualisingDataStructuresUITestsLaunchTests.swift */; };
+		856C51BB29C0CA27007FA23B /* QueueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C51BA29C0CA27007FA23B /* QueueView.swift */; };
+		856C51BE29C0CBDC007FA23B /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C51BD29C0CBDC007FA23B /* Stack.swift */; };
+		856C51C029C0CC6F007FA23B /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C51BF29C0CC6E007FA23B /* Queue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		856C518A29C0C63A007FA23B /* VisualisingDataStructures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualisingDataStructures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		856C518D29C0C63A007FA23B /* VisualisingDataStructuresApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualisingDataStructuresApp.swift; sourceTree = "<group>"; };
-		856C518F29C0C63A007FA23B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		856C518F29C0C63A007FA23B /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 		856C519129C0C63D007FA23B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		856C519429C0C63D007FA23B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		856C519A29C0C63D007FA23B /* VisualisingDataStructuresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisualisingDataStructuresTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,10 @@
 		856C51A429C0C63D007FA23B /* VisualisingDataStructuresUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisualisingDataStructuresUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		856C51A829C0C63D007FA23B /* VisualisingDataStructuresUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualisingDataStructuresUITests.swift; sourceTree = "<group>"; };
 		856C51AA29C0C63D007FA23B /* VisualisingDataStructuresUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualisingDataStructuresUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		856C51BA29C0CA27007FA23B /* QueueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueView.swift; sourceTree = "<group>"; };
+		856C51BD29C0CBDC007FA23B /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		856C51BF29C0CC6E007FA23B /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		85EE50CC29C0FC4000C4EED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +101,10 @@
 		856C518C29C0C63A007FA23B /* VisualisingDataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				85EE50CC29C0FC4000C4EED3 /* Info.plist */,
+				856C51BC29C0CBCE007FA23B /* Data Structures */,
+				856C51B729C0C9DC007FA23B /* Views */,
 				856C518D29C0C63A007FA23B /* VisualisingDataStructuresApp.swift */,
-				856C518F29C0C63A007FA23B /* ContentView.swift */,
 				856C519129C0C63D007FA23B /* Assets.xcassets */,
 				856C519329C0C63D007FA23B /* Preview Content */,
 			);
@@ -125,6 +134,24 @@
 				856C51AA29C0C63D007FA23B /* VisualisingDataStructuresUITestsLaunchTests.swift */,
 			);
 			path = VisualisingDataStructuresUITests;
+			sourceTree = "<group>";
+		};
+		856C51B729C0C9DC007FA23B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				856C518F29C0C63A007FA23B /* StackView.swift */,
+				856C51BA29C0CA27007FA23B /* QueueView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		856C51BC29C0CBCE007FA23B /* Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+				856C51BD29C0CBDC007FA23B /* Stack.swift */,
+				856C51BF29C0CC6E007FA23B /* Queue.swift */,
+			);
+			path = "Data Structures";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +284,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				856C519029C0C63A007FA23B /* ContentView.swift in Sources */,
+				856C51C029C0CC6F007FA23B /* Queue.swift in Sources */,
+				856C51BE29C0CBDC007FA23B /* Stack.swift in Sources */,
+				856C519029C0C63A007FA23B /* StackView.swift in Sources */,
+				856C51BB29C0CA27007FA23B /* QueueView.swift in Sources */,
 				856C518E29C0C63A007FA23B /* VisualisingDataStructuresApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,11 +450,13 @@
 				DEVELOPMENT_TEAM = 6RF82GHTPV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VisualisingDataStructures/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,11 +481,13 @@
 				DEVELOPMENT_TEAM = 6RF82GHTPV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VisualisingDataStructures/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
