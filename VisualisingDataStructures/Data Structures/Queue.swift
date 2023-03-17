@@ -7,44 +7,51 @@
 
 import Foundation
 
-class Queue {
+struct Queue {
     
     var capacity: Int
     var queueArray: [Int]
     var head: Int
     var tail: Int
+    var errorMessage: String
     
     init(capacity: Int) {
         self.capacity = capacity
         self.queueArray = Array(repeating: 0, count: capacity)
         self.head = 0
         self.tail = -1
+        self.errorMessage = ""
     }
     
-    func pop() {
-        if head > tail {
-            print("Queue Empty!")
+    mutating func pop() {
+        if self.head >= self.capacity {
+            self.errorMessage = "Queue Full"
         }
+        
+        else if self.tail > 1 && self.tail >= self.head {
+            self.head += 1
+        }
+        
         else {
-            head += 1
+            self.errorMessage = "Queue Empty"
         }
     }
     
-    func push(item: Int) {
-        if tail >= capacity - 1 {
-            print("Queue Full!")
+    mutating func push(item: Int) {
+        if self.tail < self.capacity - 1{
+            self.tail += 1
+            self.queueArray[self.tail] = item
         }
-        else {
-            tail += 1
-            queueArray[tail] = item
+        else{
+            self.errorMessage = "Queue Full"
         }
     }
     
     func outputQueue() -> [Int] {
-        return queueArray
+        return self.queueArray
     }
     
     func peek() -> Int {
-        return queueArray[head]
+        return self.queueArray[head]
     }
 }

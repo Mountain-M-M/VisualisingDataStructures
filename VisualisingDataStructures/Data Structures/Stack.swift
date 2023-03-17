@@ -8,6 +8,7 @@
 import Foundation
 
 struct Stack {
+    
     var capacity: Int
     var stackArray: [Int]
     var tail: Int
@@ -21,7 +22,7 @@ struct Stack {
     }
     
     mutating func pop() {
-        if self.tail <= 0 {
+        if self.tail <= -1 {
             self.errorMessage = "Stack Empty"
         }
         else {
