@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8538CFAC29CA0A9100C0A6FD /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8538CFAB29CA0A9100C0A6FD /* LinkedList.swift */; };
+		8538CFAE29CA0BCA00C0A6FD /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8538CFAD29CA0BCA00C0A6FD /* RootTabView.swift */; };
+		8538CFB029CA0C0800C0A6FD /* LinkedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8538CFAF29CA0C0800C0A6FD /* LinkedListView.swift */; };
 		856C518E29C0C63A007FA23B /* VisualisingDataStructuresApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C518D29C0C63A007FA23B /* VisualisingDataStructuresApp.swift */; };
 		856C519029C0C63A007FA23B /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C518F29C0C63A007FA23B /* StackView.swift */; };
 		856C519229C0C63D007FA23B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 856C519129C0C63D007FA23B /* Assets.xcassets */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8538CFAB29CA0A9100C0A6FD /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		8538CFAD29CA0BCA00C0A6FD /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		8538CFAF29CA0C0800C0A6FD /* LinkedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListView.swift; sourceTree = "<group>"; };
 		856C518A29C0C63A007FA23B /* VisualisingDataStructures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualisingDataStructures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		856C518D29C0C63A007FA23B /* VisualisingDataStructuresApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualisingDataStructuresApp.swift; sourceTree = "<group>"; };
 		856C518F29C0C63A007FA23B /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
@@ -141,6 +147,8 @@
 			children = (
 				856C518F29C0C63A007FA23B /* StackView.swift */,
 				856C51BA29C0CA27007FA23B /* QueueView.swift */,
+				8538CFAF29CA0C0800C0A6FD /* LinkedListView.swift */,
+				8538CFAD29CA0BCA00C0A6FD /* RootTabView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,6 +156,7 @@
 		856C51BC29C0CBCE007FA23B /* Data Structures */ = {
 			isa = PBXGroup;
 			children = (
+				8538CFAB29CA0A9100C0A6FD /* LinkedList.swift */,
 				856C51BD29C0CBDC007FA23B /* Stack.swift */,
 				856C51BF29C0CC6E007FA23B /* Queue.swift */,
 			);
@@ -284,9 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8538CFAE29CA0BCA00C0A6FD /* RootTabView.swift in Sources */,
+				8538CFAC29CA0A9100C0A6FD /* LinkedList.swift in Sources */,
 				856C51C029C0CC6F007FA23B /* Queue.swift in Sources */,
 				856C51BE29C0CBDC007FA23B /* Stack.swift in Sources */,
 				856C519029C0C63A007FA23B /* StackView.swift in Sources */,
+				8538CFB029CA0C0800C0A6FD /* LinkedListView.swift in Sources */,
 				856C51BB29C0CA27007FA23B /* QueueView.swift in Sources */,
 				856C518E29C0C63A007FA23B /* VisualisingDataStructuresApp.swift in Sources */,
 			);
